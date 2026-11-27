@@ -1,0 +1,6 @@
+{
+  "name": "PaisaMeter",
+  "description": "Daily expense tracker and budget manager with AI receipt scanning, interactive analytics, and smart budget alerts.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,131 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #F8F7F4;
+  --ink: #1B1B1B;
+  --accent: #FF5A25;
+}
+
+@layer base {
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background-color: var(--bg);
+    color: var(--ink);
+  }
+}
+
+.font-space {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.brutal-card {
+  background-color: #FFFFFF;
+  border: 2px solid #1B1B1B;
+  box-shadow: 6px 6px 0px #1B1B1B;
+}
+
+.brutal-card-sm {
+  background-color: #FFFFFF;
+  border: 2px solid #1B1B1B;
+  box-shadow: 3px 3px 0px #1B1B1B;
+}
+
+.brutal-btn-accent {
+  background-color: #FF5A25;
+  color: #FFFFFF;
+  border: 2px solid #1B1B1B;
+  box-shadow: 4px 4px 0px #1B1B1B;
+  font-family: 'Space Grotesk', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: transform 0.1s, box-shadow 0.1s;
+}
+
+.brutal-btn-accent:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px #1B1B1B;
+}
+
+.brutal-btn-white {
+  background-color: #FFFFFF;
+  color: #1B1B1B;
+  border: 2px solid #1B1B1B;
+  box-shadow: 4px 4px 0px #1B1B1B;
+  font-family: 'Space Grotesk', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: transform 0.1s, box-shadow 0.1s;
+}
+
+.brutal-btn-white:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px #1B1B1B;
+}
+
+.brutal-input {
+  width: 100%;
+  border: 2px solid #1B1B1B;
+  background-color: #FFFFFF;
+  color: #1B1B1B;
+  font-family: inherit;
+  transition: box-shadow 0.1s;
+}
+
+.brutal-input:focus {
+  outline: none;
+  box-shadow: 3px 3px 0px #FF5A25;
+}
+
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #334155;
+}
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+/* 3D Coin Flip Utilities */
+.perspective-1000 {
+  perspective: 1000px;
+}
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
